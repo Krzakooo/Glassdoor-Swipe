@@ -20,6 +20,20 @@ export async function fetchJobs(page: number = 1): Promise<Job[]> {
       description: 'Looking for a talented Software Engineer...',
       requirements: ['React', 'TypeScript', '3+ years experience'],
     },
+
+    {
+        id: '2',
+        title: 'DevOps Engineer',
+        company: 'Tech Corp 2',
+        location: 'Los Angeles, CA',
+        salary: {
+          min: 70000,
+          max: 100000,
+          currency: 'USD',
+        },
+        description: 'Looking for a talented DevOps Engineer...',
+        requirements: ['AWS', 'GCP', '3+ years experience'],
+      },
     // Add more mock jobs...
   ];
 }
