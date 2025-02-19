@@ -35,5 +35,31 @@ export async function fetchJobs(page: number = 1): Promise<Job[]> {
         requirements: ['AWS', 'GCP', '3+ years experience'],
       },
     // Add more mock jobs...
+    {
+      id: '3',
+      title: 'Product Manager',
+      company: 'Innovation Labs',
+      location: 'New York, NY',
+      salary: {
+        min: 110000,
+        max: 150000,
+        currency: 'USD',
+      },
+      description: 'Seeking an experienced Product Manager to lead our flagship product development...',
+      requirements: ['5+ years PM experience', 'MBA preferred', 'Strong analytical skills', 'Agile methodology'],
+    },
+    {
+      id: '4',
+      title: 'Frontend Developer',
+      company: 'Creative Digital',
+      location: 'Remote',
+      salary: {
+        min: 85000,
+        max: 130000,
+        currency: 'USD',
+      },
+      description: 'Join our dynamic team building cutting-edge web applications...',
+      requirements: ['Vue.js', 'CSS/SCSS', 'JavaScript', 'Performance optimization'],
+    }
   ];
 }
